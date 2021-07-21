@@ -27,6 +27,7 @@ jobs:
         with:
           node-version: 14
           registry-url: https://us-west1.npm.pkg.dev/hanzhenyi3/npm/
+          scope: "@npm-publish-test"
       - run: npm ci
       - run: npm publish
         env:
