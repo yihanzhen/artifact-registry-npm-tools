@@ -27,7 +27,6 @@ jobs:
         with:
           node-version: 14
           registry-url: https://us-west1-npm.pkg.dev/hanzhenyi3/npmplayground/
-      - run: npm ci
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GCLOUD_ACCESS_TOKEN}}
